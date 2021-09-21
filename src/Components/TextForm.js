@@ -6,11 +6,13 @@ export default function TextForm(props) {
         let newText=text.toUpperCase();
         setText(newText)
         props.ShowAlert("Converted to UpperCase","success");
+        // document.title="TextUtils-Clicked UpperCase";
     }
     const handleLwrClick=()=>{
         let newText=text.toLowerCase();
         setText(newText)
         props.ShowAlert("Converted to LowerCase","success");
+        // document.title="TextUtils-Clicked LowerCase";
     }
     const handleCpyClick=()=>{
         let text=document.getElementById("myBox");
